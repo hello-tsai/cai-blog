@@ -1,0 +1,1 @@
+<% page.posts.each(function(post){ %>    <el-timeline-item            size="large"            color="blue"            timestamp=<%- post.date.format('YYYY-MM-DD') %> placement="top">        <el-card>            <h4><%- post.path %></h4>            <p><%= post.title %></p>        </el-card>    </el-timeline-item><% }); %>
